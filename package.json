@@ -1,16 +1,16 @@
 {
-  "name": "react-audio-recorder",
+  "name": "react-audio-recorder-extended",
   "version": "1.0.0",
   "description": "Audio Recorder",
   "main": "lib/AudioRecorder.js",
-  "author": "Dan Rouse",
-  "homepage": "https://github.com/kremonte/react-audio-recorder",
+  "author": "Dan Rouse - Marco A. Pajares",
+  "homepage": "https://github.com/ayxos/react-audio-recorder",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kremonte/react-audio-recorder.git"
+    "url": "https://github.com/ayxos/react-audio-recorder.git"
   },
   "bugs": {
-    "url": "https://github.com/kremonte/react-audio-recorder/issues"
+    "url": "https://github.com/ayxos/react-audio-recorder/issues"
   },
   "dependencies": {
     "classnames": "^2.1.2"

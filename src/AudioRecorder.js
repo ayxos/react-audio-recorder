@@ -7,8 +7,8 @@ class AudioRecorder extends Component {
 
     this.buffers = [[], []];
     this.bufferLength = 0;
-    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    this.sampleRate = this.audioContext.sampleRate;
+    this.audioContext = null;
+    this.sampleRate = null;
     this.recordingStream = null;
     this.playbackSource = null;
 
@@ -17,6 +17,11 @@ class AudioRecorder extends Component {
       playing: false,
       audio: props.audio
     };
+  }
+
+  componentDidMount() {
+    this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    this.sampleRate = this.audioContext.sampleRate;
   }
 
   startRecording() {
@@ -210,7 +215,7 @@ class AudioRecorder extends Component {
 }
 
 AudioRecorder.propTypes = {
-  audio: PropTypes.instanceOf(Blob),
+  audio: PropTypes.any,
   download: PropTypes.bool,
   loop: PropTypes.bool,
 

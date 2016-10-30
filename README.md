@@ -1,3 +1,7 @@
+# Extension
+
+This Lib is just a extension of the original lib [https://github.com/danrouse/react-audio-recorder](https://github.com/danrouse/react-audio-recorder)
+
 # Audio Recorder
 
 A React Component using the Web Audio API to record, save, and play audio.

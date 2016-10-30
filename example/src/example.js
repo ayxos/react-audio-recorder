@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var AudioRecorder = require('react-audio-recorder');
+var AudioRecorder = require('react-audio-recorder-extended');
 
 var App = React.createClass({
   render () {
